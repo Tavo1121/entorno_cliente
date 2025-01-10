@@ -8,3 +8,6 @@ Cinco emplearemos funciones para que cuando se presione el boton de disminuir pa
 cambiara el color a un color rojo, si es igual a 0 sera de color negro.
 Seis al presionar el boton de incrementar se creara una funcion en la que se sumara uno a la variable.
 Siete al presionar el boton de reset se reiniciara el contador a 0.
+
+
+hola.
