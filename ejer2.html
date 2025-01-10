@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Background :</h1>
+        <button id="cambiofondo">Boton</button>
+    </div>
+</body>
+<script>
+    const listaColores = [0,1,2,3,4,5,6,7,8,9 ,"a","b" ,"c", "d", "E","f"];
+    const Boton = document.getElementById("cambiofondo");
+    Boton.addEventListener("click",function(){
+        const color=["#"];
+        for (let i = 0; i < 5; i++) {
+            const random = Math.floor(Math.random()*listaColores.length);
+            document.body.style.backgroundColor = listaColores[random];
+            color[0]=color[0]+random;
+        }
+        
+        
+
+        document.body.style.backgroundColor = color[0];
+    });
+</script>
+</html>

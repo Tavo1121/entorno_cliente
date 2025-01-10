@@ -1,0 +1,10 @@
+Haremos una pagina web que tendra que ser un contador que inicialmente empieza en 0.
+
+Primero crearemos las variables necesarias.
+Segundo haremos los tres botones solicitados
+Tercero abriremos el script en el que almacenaremos el js
+Cuarto haremos 3 variables una para cada botonç
+Cinco emplearemos funciones para que cuando se presione el boton de disminuir para disminir de uno en uno y si es menor a 0 se
+cambiara el color a un color rojo, si es igual a 0 sera de color negro.
+Seis al presionar el boton de incrementar se creara una funcion en la que se sumara uno a la variable.
+Siete al presionar el boton de reset se reiniciara el contador a 0.

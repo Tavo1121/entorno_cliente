@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+<body>
+    <div>
+        <h1>Background :</h1>
+        <button id="cambiofondo">Boton</button>
+    </div>
+</body>
+<script>
+    const color =["#ffffff","blue", "red","yellow"];
+    const Boton = document.getElementById("cambiofondo");
+    Boton.addEventListener("click",function(){
+        const random = Math.floor(Math.random()*color.length);
+        document.body.style.backgroundColor = color[random];
+        
+    });
+</script>
+
+</script>
+</html>
