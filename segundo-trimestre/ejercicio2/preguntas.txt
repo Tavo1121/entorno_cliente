@@ -1,15 +1,23 @@
 - PREGUNTAS CONCEPTUALES -
-1. ¿Qué es el evento DOMContentLoaded y por qué se utiliza en este proyecto?
 
-2. ¿Cómo funciona la navegación entre reseñas en este proyecto?
+¿Qué es el evento DOMContentLoaded y por qué se utiliza en este proyecto?
+El evento DOMContentLoaded se dispara cuando el DOM se ha cargado completamente, es decir, cuando la estructura HTML ha sido interpretada por el navegador. En este proyecto, se utiliza para asegurarse de que los elementos del DOM (como imágenes y botones) estén disponibles antes de intentar acceder a ellos o modificarlos en JavaScript.
 
-3. ¿Qué hace la función showPerson y cómo se relaciona con el array reviews?
+¿Cómo funciona la navegación entre reseñas en este proyecto?
+La navegación entre reseñas se realiza a través de los botones "prev" y "next". Estos botones están vinculados a funciones que actualizan el índice currentItem, lo que permite acceder a diferentes elementos del array reviews. Se utiliza la función showPerson para mostrar los datos correspondientes a cada índice.
 
-4. ¿Qué sucede si el valor de currentItem es mayor que la longitud del array reviews?
+¿Qué hace la función showPerson y cómo se relaciona con el array reviews?
+La función showPerson recibe un índice como parámetro y utiliza este índice para acceder a un objeto del array reviews. Luego, actualiza los elementos del DOM (imagen, nombre, trabajo y descripción) con los datos de ese objeto.
 
-5. ¿Cómo se genera una reseña aleatoria y qué función se utiliza para ello?
+¿Qué sucede si el valor de currentItem es mayor que la longitud del array reviews?
+Si currentItem es mayor que la longitud del array, se reinicia a 0. Esto asegura que la navegación sea cíclica, volviendo al primer elemento cuando se supera el último.
 
-6. ¿Qué pasaría si el array reviews estuviera vacío?
+¿Cómo se genera una reseña aleatoria y qué función se utiliza para ello?
+Se genera utilizando Math.random() para obtener un número aleatorio entre 0 y la longitud del array reviews. Este número se redondea con Math.floor() y se asigna a currentItem, luego se llama a showPerson para mostrar la reseña.
+
+¿Qué pasaría si el array reviews estuviera vacío?
+Si el array está vacío, las funciones que dependen de él no podrán acceder a los datos y lanzarán errores al intentar acceder a propiedades de un objeto inexistente.
+
 
 
 - MODIFICACIONES SOBRE EL CÓDIGO -
